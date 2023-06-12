@@ -1,0 +1,212 @@
+
+
+
+/* Where Mojiboye started his styling */
+
+:root{
+	--black: color:  hsla(0, 0%, 0%, 0.7);
+	--colour-blue: hsl(236, 62%, 59%);
+
+	
+}
+
+header{
+	background-color: blue;
+	color: white;
+	height: 14vh;
+	padding: 3px 3px;
+}
+
+header ul{
+	display: flex;
+	gap: 4.5rem;
+}
+
+header ul li{
+list-style: none;
+line-height: 10px;
+
+}
+
+header ul li .topword{
+	line-height: 1.6;
+}
+
+header ul li .fa-search{
+	background: yellow;
+}
+
+header ul li input{
+	border-radius: 20px;
+	width: 350px;
+}
+
+header a{
+	/* margin-top: 10vh; */
+	/* margin-left: 20px; */
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: #fff;
+}
+header ul li a span{
+	font-size: 0.8rem;
+	line-height: 1;
+}
+/* 
+#myNav a{
+	cursor: pointer;
+	color: white;
+} */
+
+
+.welcome .left{
+	padding-inline: 15px;
+	width: 100%;
+	padding: 1rem 0;
+	box-shadow:   0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
+	background-color: #fff;
+	height: 60vh;
+	border-radius: 10px;
+	outline: rgb(134, 134, 134);
+	outline-color: silver;
+}
+
+.welcome .container-fluid{
+	/* font-size: 1.6rem; */
+	padding-inline: 15px;
+	list-style: none;
+	display: flex;
+}
+
+.welcome .container-fluid .left h2{
+	font-size: 1rem;
+	color: var(--black);
+}
+
+.welcome .container-fluid .left a{
+	color: var(--black);
+	text-decoration: underline;
+}
+
+.welcome .container-fluid .left img{
+	 height: 220px;
+	/*margin-left: 50px;*/
+	width: 200px; 
+	border-radius: 20px;
+}
+
+.btn{
+	background: var(--colour-blue);
+	border-radius: 20px;
+	color: #fff;
+}
+
+.btn:hover{
+	background: blue;
+	color: #fff;
+}
+
+.welcome .container-fluid .left .btn{
+	margin-top: 10px;
+}
+
+.welcome .container-fluid .left center span{
+	line-height: 2;
+}
+
+.page-content{
+	list-style: none;
+}
+
+/* For slider */
+.slider-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
+	gap: 10px;
+	-webkit-border-radius: var(--border-radius-md);
+			border-radius: var(--border-radius-md);
+	overflow: auto hidden;
+	-webkit-scroll-snap-type: inline mandatory;
+		-ms-scroll-snap-type: inline mandatory;
+			scroll-snap-type: inline mandatory;
+	overscroll-behavior-inline: contain;
+	
+  }
+  
+  .slider-item {
+	width: 70%;
+	position: relative;
+	min-width: 100%;
+	max-height: 60vh;
+	aspect-ratio: 1 / 1;
+	-webkit-border-radius: var(--border-radius-md);
+			border-radius: var(--border-radius-md);
+	overflow: hidden;
+	scroll-snap-align: start;
+  }
+  
+  .slider-item .banner-img {
+	border-radius: 20px;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: right;
+	   object-position: right;
+  }
+  
+  .banner-content {
+	background: hsla(0, 0%, 100%, 0.8);
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	right: 25px;
+	padding: 20px 25px;
+	-webkit-border-radius: var(--border-radius-md);
+			border-radius: var(--border-radius-md);
+  }
+  
+  .banner-subtitle {
+	color: var(--salmon-pink);
+	font-size: var(--fs-7);
+	font-weight: var(--weight-500);
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+  }
+  
+  .banner-title {
+	color: var(--eerie-black);
+	font-size: var(--fs-1);
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 10px;
+  }
+  
+  .banner-text { display: none; }
+  
+  .banner-btn {
+	background: var(--salmon-pink);
+	color: var(--white);
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	font-size: var(--fs-11);
+	font-weight: var(--weight-600);
+	text-transform: uppercase;
+	padding: 4px 10px;
+	-webkit-border-radius: var(--border-radius-sm);
+			border-radius: var(--border-radius-sm);
+	-webkit-transition: var(--transition-timing);
+	-o-transition: var(--transition-timing);
+	transition: var(--transition-timing);
+  }
+  
+  .banner-btn:hover { background: var(--eerie-black); }
+  
